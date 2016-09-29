@@ -60,7 +60,8 @@
         
          <nav>
             <div class="nav-wrapper  green accent-4">
-                <a href="#!" class="brand-logo"><img src="imgs/logop.png"></a>
+                                <a href="paginaPrincipal.jsp" class="brand-logo"><img src="imgs/logop.png"></a>
+
                 <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
                 <ul class="right hide-on-med-and-down">
                    
@@ -92,32 +93,21 @@
             </ul>
         </ul>
 
-        <br><br>
-        
-
         <ul id="crearEquipos" class="dropdown-content">
             <li><a class="waves-effect waves-light modal-trigger" href="#modal1">Nuevo</a></li>
 
             <li><a href="#">Ver</a></li>
         </ul>
-        <nav>
-            <div class="nav-wrapper green accent-4">
-                <a href="paginaPrincipal.jsp" class="brand-logo"><img src="imgs/logop.png"></a>
-                <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
-                <ul class="right hide-on-med-and-down">
-                    <li><a class="dropdown-button" href="#" data-activates="crearEquipos">Equipos<i class="material-icons right">arrow_drop_down</i></a></li>
-                    <li><a href="#" id="nuevoTorneo" onclick="calendario()">Calendario</a></li>
-                    <li><a href="#" id="clasificacion" onclick="tablaPosiion()">Clasificación</a></li>
+        <div>
+            <div class="nav-wrapper card-panel lighten-1">
+                <div class="row">
+             <a class="dropdown-button col s4" href="#" data-activates="crearEquipos" style="color:black">Equipos<i class="material-icons right">arrow_drop_down</i></a>
+             <a class="col s4" href="#" id="nuevoTorneo" onclick="calendario()" style="color:black" >Calendario</a>
+             <a class="col s4" href="#" id="clasificacion" onclick="tablaPosiion()" style="color:black">Clasificación</a>
 
-                </ul>
-                <ul class="side-nav" id="mobile-demo">
-                    <li><a class="dropdown-button" href="#" data-activates="crearEquipo">Equipos<i class="material-icons right">arrow_drop_down</i></a></li>
-                    <li><a href="#" id="nuevoTorne">Partidos</a></li>
-                    <li><a href="#" id="clasificacio">Clasificacion</a></li>
-
-                </ul>
+                </div>
             </div>
-        </nav>
+        </div>
 
         <%if (Integer.parseInt(request.getParameter("idTorneo")) != 0) {
                 int id = Integer.parseInt(request.getParameter("idTorneo"));
@@ -127,8 +117,6 @@
         <%
             }
         %>
-
-        <br><br>
 
         <div class="container">
   <h3 class="center-align">Equipos</h3>
