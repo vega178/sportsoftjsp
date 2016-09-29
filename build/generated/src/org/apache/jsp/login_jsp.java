@@ -52,9 +52,9 @@ public final class login_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("\r\n");
       out.write("        <title>SportSoft</title>\r\n");
       out.write("        <!------------------------------------MATERIALIZECSS--------------------------------------->\r\n");
-      out.write("        <link rel=\"stylesheet\" href=\"https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/css/materialize.min.css\">\r\n");
+      out.write("        <link href=\"css/materialize.min.css\" rel=\"stylesheet\" type=\"text/css\"/>\r\n");
       out.write("        <script src=\"https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js\"></script>\r\n");
-      out.write("        <script src=\"https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/js/materialize.min.js\"></script>\r\n");
+      out.write("        <script src=\"js/materialize.min.js\" type=\"text/javascript\"></script>\r\n");
       out.write("        <link href=\"https://fonts.googleapis.com/icon?family=Material+Icons\" rel=\"stylesheet\">\r\n");
       out.write("        <script src=\"js/inicioMaterializecss.js\" type=\"text/javascript\"></script>\r\n");
       out.write("        <!------------------------------------AJAX---------------------------------------->\r\n");
@@ -113,7 +113,7 @@ public final class login_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("                    <button class=\"btn waves-effect green accent-4\"  type=\"button\" id=\"btncancelarLogin\">Cancelar</button>\r\n");
       out.write("                            </div>\r\n");
       out.write("                \r\n");
-      out.write("                <span><a><p>Olvidé mi contraseña</p></a></span>\r\n");
+      out.write("                <span><p><span>Olvidé mi contraseña</span></p></span>\r\n");
       out.write("            </form>\r\n");
       out.write("        </div>\r\n");
       out.write("        \r\n");
