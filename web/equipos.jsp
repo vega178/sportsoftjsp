@@ -456,45 +456,74 @@
 
 
         </div>
-        <footer class="page-footer green accent-4">
-          <div class="container">
-            <div class="row">
-              <div class="col l6 s12">
-                <h5 class="white-text">Datos de la empresa</h5>
-                <p class="grey-text text-lighten-4">Nombre: Grupo SportSoft.</p>
-                <p class="grey-text text-lighten-4">Direccion: Cr 23b Nr 38b - 274</p>
-                <p class="grey-text text-lighten-4">Teléfono: 5283318</p>
-                <p class="grey-text text-lighten-4">Correo: gruposportsoft@gmail.com</p>
-
-              </div>
-              <div class="col l4 offset-l2 s12">
-                <h5 class="white-text">Acerca de</h5>
-                <ul>
-                  <li><a class="grey-text text-lighten-3" href="#!">Manual de usuario</a></li>
-                  <li><a class="grey-text text-lighten-3" href="#!">Manual técnico</a></li>
-                  <li><a class="grey-text text-lighten-3" href="condiciones.jsp">Términos de uso</a></li>
-                  <!--<li><a class="grey-text text-lighten-3" href="#!">Link 3</a></li>
-                  <li><a class="grey-text text-lighten-3" href="#!">Link 4</a></li>-->
-                </ul>
-              </div>
-            </div>
-          </div>
-            
-<div class="footer">
-    <h4 class="white-text">redes sociales</h4>
-    <div class="social"><a >&#62220;</a></div>
-    <div class="social"><a href="https://twitter.com/?request_context=signup">&#62217;</a></div>
-    <div class="social"><a href="https://plus.google.com/u/0/">&#62223;</a></div>
-  
-</div>
-          <div class="footer-copyright center-align">
+         <footer class="page-footer green accent-4">
             <div class="container">
-            © 2014 Copyright SportSoft (V1)
-           <!-- <a class="grey-text text-lighten-4 right" href="#!">More Links</a>-->
+                <div class="row">
+                    <div class="col l4 s4">
+                        <p class="white-text">Datos de la empresa</p>
+                        <p class="grey-text text-lighten-4">Nombre: Grupo SportSoft.</p>
+                        <p class="grey-text text-lighten-4">Direccion: Cr 23b Nr 38b - 274</p>
+                        <p class="grey-text text-lighten-4">Teléfono: 5283318</p>
+                        <p class="grey-text text-lighten-4">Correo: gruposportsoft@gmail.com</p>
+
+                    </div>
+                    <div class="col l4  s14">
+                        <p class="white-text">Acerca de</p>
+                        <ul>
+                            <li><a class="grey-text text-lighten-3" href="manualusuario.jsp">Manual de usuario</a></li>
+                            <li><a class="grey-text text-lighten-3" href="manualTecnico.jsp">Manual técnico</a></li>
+                            <li><a class="grey-text text-lighten-3" href="condiciones.jsp">Términos de uso</a></li>
+                            <!--<li><a class="grey-text text-lighten-3" href="#!">Link 3</a></li>
+                            <li><a class="grey-text text-lighten-3" href="#!">Link 4</a></li>-->
+                        </ul>
+                    </div>
+                    <div class="col l4  s14">
+                        <a href="#"> <p class="white-text" onclick="contac()">Contáctenos</p></a>
+                        <form id="formulario-contacto" action="script.php" method="post" class="card-panel lighten-1">
+                            <input type="hidden" name="redireccion" value="http://www.opencademy.com" />  
+                            <fieldset>
+                                <legend>Contactenos:</legend>
+                                <ul>
+                                    <li>
+                                        <label for="nombre">Nombre:</label>
+                                        <input type="text" name="nombre" id="nombre" value="" />
+                                    </li>
+                                    <li>
+                                        <label for="correo-e">Correo:</label>
+                                        <input type="text" name="correo-e" id="correo-e" value="" />
+                                    </li>
+                                    <li>
+                                        <label for="comentario">Comentario:</label>
+                                        <textarea name="comentario" id="comentario" cols="25" rows="3"></textarea>
+                                    </li>
+
+                                    <li>
+                                        <input type="submit" value="Enviar" />
+                                        <input type="reset" value="Borrar todo" />
+                                    </li>
+                                </ul>
+                            </fieldset>
+                        </form>
+
+                    </div>
+
+                </div>
             </div>
-          </div>
+
+            <div class="footer">
+                <p class="white-text">redes sociales</p>
+                <div class="social"><a >&#62220;</a></div>
+                <div class="social"><a href="https://twitter.com/?request_context=signup">&#62217;</a></div>
+                <div class="social"><a href="https://plus.google.com/u/0/">&#62223;</a></div>
+
+            </div>
+            <div class="footer-copyright right-align">
+                <div class="container">
+                    Copyright 2016 SportSoft© 2.0
+                    <!--<a class="grey-text text-lighten-4 right" href="#!">More Links</a>-->
+                </div>
+            </div>
         </footer>
-            
             
 
     </body>

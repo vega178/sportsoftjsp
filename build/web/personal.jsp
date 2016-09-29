@@ -64,7 +64,8 @@
 
         <nav>
             <div class="nav-wrapper green accent-4">
-                <a href="paginaPrincipal.jsp" class="brand-logo"><img src="imgs/logop.png"></a>
+                                               <a href="paginaPrincipal.jsp" class="brand-logo"><img src="imgs/logop.png"></a>
+
                 <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
                 <ul class="right hide-on-med-and-down">
                     <li><a href="#" id="verUsuarios" onclick="tableEmployee()">Ver empleados</a></li>
