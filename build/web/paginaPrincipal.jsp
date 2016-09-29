@@ -69,38 +69,57 @@
         <br><br>
         
       <!--  <div class="container">-->
-            <div style="background-color: black">
-         <div class="slider">
-    <ul class="slides">
-      <li>
-        <img src="http://www.wsfint.co/images/soccer-1.jpeg"> <!-- random image -->
-        <div class="caption center-align">
-          <h3 style="background-color:#43a047;opacity: 0.9">Jugadores</h3>
-        </div>
-      </li>
-      <li>
-        <img src="http://www.kansascity.com/sports/mls/fc-kansas-city/vw12/picture87510197/ALTERNATES/LANDSCAPE_1140/soccer%20stock"> <!-- random image -->
-        <div class="caption center-align">
-          <h3 style="background-color:#43a047;opacity: 0.9">Implementos Deportivos</h3>
-        </div>
-      </li>
-      <li>
-        <img src="http://www.e-dublin.com.br/wp-content/uploads/2013/09/soccer.jpg"> <!-- random image -->
-        <div class="caption center-align">
-            <h3 style="background-color:#43a047;opacity: 0.9">Gestión de Empleados</h3>
-        </div>
-      </li>
-      <li>
-        <img src="http://thornhillsoccer.com/wp-content/uploads/2016/02/Soccer-Stadium.jpg"> <!-- random image -->
-        <div class="caption center-align">
-          <h3 style="background-color:#43a047;opacity: 0.9">Organización de Torneos Deportivos</h3>
-        </div>
-      </li>
-    </ul>
-  </div>
-            </div>
-            
-            
+               <div class="container">
+            <h2 id="tituloArbitro" class="center-align">Árbitros</h2>
+
+            <div class="row" id="card" >
+                <div class="card col s4" id="cardPersonal">
+                    <div class="card-image waves-effect waves-block waves-light">
+                        <img class="activator" src="imgs/Entrenador.jpg">
+                    </div>
+                    <div class="card-content">
+                        <span class="card-title activator grey-text text-darken-4">Empleados<i class="material-icons right">more_vert</i></span>
+                        <p><a href="#" id="agregarPersonal" onclick="">Acceder</a></p>
+                    </div>
+                    <div class="card-reveal">
+                        <span class="card-title grey-text text-darken-4">Empleados<i class="material-icons right">close</i></span>
+                        <p></p>
+                    </div>
+                </div>
+                
+                    
+
+
+                <div class="card col s4" id="cardArbitro">
+                    <div class="card-image waves-effect waves-block waves-light">
+                        <img class="activator" src="imgs/arbitros1.jpg">
+                    </div>
+                    <div class="card-content">
+                        <span class="card-title activator grey-text text-darken-4">Árbitros<i class="material-icons right">more_vert</i></span>
+                        <p><a href="#" id="agregarArbitro" onclick="">Acceder</a> </p>
+                    </div>
+                    <div class="card-reveal">
+                        <span class="card-title grey-text text-darken-4">Árbitros<i class="material-icons right">close</i></span>
+                        <p>La función principal de un árbitro es hacer que el juego se lleve a cabo con la menor cantidad posibles de interferencias, y su responsabilidad fundamental, cuidar la integridad física de los jugadores. .</p>
+                    </div>
+                </div> 
+                
+                
+               <div class="card col s4" id="cardPersonal">
+                    <div class="card-image waves-effect waves-block waves-light">
+                        <img class="activator" src="imgs/Entrenador.jpg">
+                    </div>
+                    <div class="card-content">
+                        <span class="card-title activator grey-text text-darken-4">Torneos<i class="material-icons right">more_vert</i></span>
+                        <p><a href="#" id="agregarPersonal" onclick="">Acceder</a></p>
+                    </div>
+                    <div class="card-reveal">
+                        <span class="card-title grey-text text-darken-4">Torneos<i class="material-icons right">close</i></span>
+                        <p></p>
+                    </div>
+                </div>
+            </div> </div>
+
        <!-- </div>-->
         
               <footer class="page-footer green accent-4">

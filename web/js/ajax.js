@@ -21,7 +21,8 @@ $(document).ready(function () {
                 window.location.href = "personal.jsp";
 
             } else {
-                swal("Error!", msg, "error");
+           //     swal({Text:msg,confinButtonText:"Aceptar"});
+               swal("Error!", msg, "error");
             }
 
         });
