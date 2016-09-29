@@ -20,6 +20,7 @@ $(document).ready(function () {
     $("#divPartidos").hide();
     $("#divModificarEquipo").hide();
       $("#tituloArbitro").hide();
+     $("#formulario-contacto").hide();
 });
 
 function formPerson() {
@@ -27,6 +28,7 @@ function formPerson() {
     $("#card").slideUp();
     $("#divFormArbitros").hide();
     $(".btnModificarPersonas").hide();
+    
 
 }
 
@@ -43,6 +45,10 @@ function cancel() {
     $("#card").slideDown();
     $("#divFormTorneos").hide();
     $("#divDatosTorneo").slideDown();
+    $("#tabsEmpleado").slideDown();
+    $("#tabsArbitro").slideDown();
+   $("#formInventario").hide();
+   $("#divInventarios").slideDown();
 
 
 }
@@ -117,8 +123,13 @@ function partidos() {
     $("#datosEquipo").slideUp();
     $("#fechasCompeticion").hide();
 
+}
 
+function contac(){
+    $("#formulario-contacto").slideToggle();
+}
 
-
-
+function ocultar(){
+       
+$("#formPersonal").hide();
 }

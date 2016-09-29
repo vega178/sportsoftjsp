@@ -37,7 +37,8 @@
                 <a href="#!" class="brand-logo"><img src="imgs/logop.png"></a>
                 <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
                 <ul class="right hide-on-med-and-down">
-                    <li><a href="personal.jsp"  id="personal" class="personal">Personal</a></li>
+                   
+                   <li><a class="dropdown-button deportes" href="#!" data-activates="personal">Personal<i class="material-icons right">arrow_drop_down</i></a></li>
                     <li><a class="dropdown-button deportes" href="#!" data-activates="deportes">Deportes<i class="material-icons right">arrow_drop_down</i></a></li>
                     <li><a href="inventario.jsp" id="inicio" class="inicio">Inventario</a></li>
                     <li><a class="dropdown-button" href="#" class="conf" data-activates="configuracion">Configuración<i class="material-icons right">arrow_drop_down</i></a></li>
@@ -57,6 +58,11 @@
         <!----------------------------------DROPDOWN DEPORTES-------------------------------------------------->
             <ul id="deportes" class="dropdown-content">
                 <li><a href="torneos.jsp">Futbol</a></li>
+            </ul>
+        
+        <ul id="personal" class="dropdown-content">
+                <li><a href="empleados.jsp">Empleados</a></li>
+                <li><a href="arbitros.jsp">Arbitros</a></li>
             </ul>
         </ul>
 

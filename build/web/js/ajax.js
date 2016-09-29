@@ -394,6 +394,7 @@ function updateReferee(id) {
         $("#correoArbitro").val(idA[i].corr);
         $("#direccionArbitro").val(idA[i].direc);
         var idArbitro = (idA[i].id);
+        $("#tabsArbitro").hide();
         $("#btnModificarArbitros").show();
         $("#btnGuardarArbitros").hide();
         $("#divFormArbitros").slideDown();
@@ -497,6 +498,7 @@ function updateEmployee(id) {
         $("#correoUsuario").val(idI[i].corr);
         $("#direccionUsuario").val(idI[i].direc);
         var usu = (idI[i].id);
+        $("#tabsEmpleado").hide();
         $("#divDatos").slideUp();
         $(".btnModificarPersonas").show();
         $("#btnGuardarPersonas").hide();

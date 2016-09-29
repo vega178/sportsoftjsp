@@ -13,9 +13,9 @@
 
         <title>SportSoft</title>
         <!------------------------------------MATERIALIZECSS--------------------------------------->
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/css/materialize.min.css">
+        <link href="css/materialize.min.css" rel="stylesheet" type="text/css"/>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/js/materialize.min.js"></script>
+        <script src="js/materialize.min.js" type="text/javascript"></script>
         <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
         <script src="js/inicioMaterializecss.js" type="text/javascript"></script>
         <!------------------------------------AJAX---------------------------------------->
@@ -74,7 +74,7 @@
                     <button class="btn waves-effect green accent-4"  type="button" id="btncancelarLogin">Cancelar</button>
                             </div>
                 
-                <span><a><p>Olvidé mi contraseña</p></a></span>
+                <span><p><span>Olvidé mi contraseña</span></p></span>
             </form>
         </div>
         

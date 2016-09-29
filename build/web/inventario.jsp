@@ -16,9 +16,9 @@
        
         <title>SportSoft</title>
          <!------------------------------------MATERIALIZECSS--------------------------------------->
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/css/materialize.min.css">
+         <link href="css/materialize.min.css" rel="stylesheet" type="text/css"/>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/js/materialize.min.js"></script>
+        <script src="js/materialize.min.js" type="text/javascript"></script>
         <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
         <script src="js/inicioMaterializecss.js" type="text/javascript"></script>
         <!------------------------------------AJAX---------------------------------------->
@@ -56,71 +56,58 @@
     </head>
     
     <body>
-         <nav>
-           <div class="nav-wrapper green accent-4">
-    <a href="paginaPrincipal.jsp" class="brand-logo"><img src="imgs/logop.png"></a>
-      <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
-      <ul class="right hide-on-med-and-down">
-          <li><a href="#" id="agregarImplementos" onclick="addImplements()">Agregar Implementos</a></li>
-        
-      </ul>
-      <ul class="side-nav" id="mobile-demo">
-           <li><a href="#" id="agregarImplementos">Agregar Implementos</a></li>
+        <nav>
+            <div class="nav-wrapper  green accent-4">
+                <a href="#!" class="brand-logo"><img src="imgs/logop.png"></a>
+                <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+                <ul class="right hide-on-med-and-down">
+                   
+                   <li><a class="dropdown-button deportes" href="#!" data-activates="personal">Personal<i class="material-icons right">arrow_drop_down</i></a></li>
+                    <li><a class="dropdown-button deportes" href="#!" data-activates="deportes">Deportes<i class="material-icons right">arrow_drop_down</i></a></li>
+                    <li><a href="inventario.jsp" id="inicio" class="inicio active">Inventario</a></li>
+                    <li><a class="dropdown-button" href="#" class="conf" data-activates="configuracion">Configuración<i class="material-icons right">arrow_drop_down</i></a></li>
 
+                </ul>
+                <ul class="side-nav" id="mobile-demo">
+                   <li><a href="personal.jsp"  id="" class="personal">Personal</a></li>
+                    <li><a class="dropdown-button deportes" href="#!" data-activates="deporte">Deportes<i class="material-icons right">arrow_drop_down</i></a></li>
+                    <li><a href="implementos.jsp" id="" class="inicio ">Inventario</a></li>
+                    <li><a class="dropdown-button" href="#" class="conf" data-activates="configuracio">Configuracion<i class="material-icons right">arrow_drop_down</i></a></li>
+                </ul>
+            </div>
+        </nav>
+        <!----------------------------------DROPDOWN CONFIGURACION-------------------------------------------------->
+        <ul id="configuracion" class="dropdown-content">
+            <li><a href="login.jsp?cerrar=true">salir</a></li>
+        <!----------------------------------DROPDOWN DEPORTES-------------------------------------------------->
+            <ul id="deportes" class="dropdown-content">
+                <li><a href="torneos.jsp">Futbol</a></li>
+            </ul>
         
+        <ul id="personal" class="dropdown-content">
+                <li><a href="empleados.jsp">Empleados</a></li>
+                <li><a href="arbitros.jsp">Arbitros</a></li>
+            </ul>
+        </ul>
+
+        <br><br>
+         <div class="container">
+            <h4 class="center-align">Implementos deportivos</h4>
+        </div>
+         <div class="row" id="tabsInventario">
+    <div class="col s12">
+      <ul class="tabs">
+          <li class="tab col s3"><a class="active" href="#test1" onclick="cancel()">Ver implementos deportivos</a></li>
+          <li class="tab col s3"><a href="#test2" onclick="addImplements()">Agregar implemento deportivo</a></li>
+   
+           
+        </li>
       </ul>
     </div>
-      </nav>
-        
-        
-         <div class="container">
-                       <h3 class="center-align">Inventario</h3>
-            <div class="row card-panel lighten-1" id="formInventario">
-                <h2>Implementos Deportivos</h2>
-         <form >
-             <div class="input-field">
-                 <input id="codigoI" name="codigo" type="text" required="Debe llenarlo!">
-          <label for="codigo">Codigo</label>
-        </div>
-         <div class="input-field">
-              <input id="nombreI" name="nombre" type="text">
-          <label for="nombre">Nombre</label>
-        </div>
-          <div class="input-field">
-              <input id="marcaI" name="marca" type="text">
-          <label for="marca">Marca</label>
-        </div>
-         <div class="input-field">
-             <input id="descripcionI" name="descripcion" type="text">
-          <label for="descripcion">Descripción</label>
-        </div>
-             <div class="input-field">
-             <input id="cantidadI" name="cantidad" type="text" onkeypress="return isNumberKey(event)">
-          <label for="cantidad">Cantidad</label>
-        </div>
-        <div class="input-field">
-    <select id="estadoI" name="estado">
-      <option value="Bueno">Bueno</option>
-      <option value="Medio">Medio</option>
-      <option value="Malo">Malo</option>
-    </select>
-    
-        
-  </div>
-         
-        <div class="center-align">
-      
-
-      <button class="btn waves-effect green accent-4  btnGuardarImplementos" type="button" id="btnGuardarImplementos">Guardar</button>
-      <button class="btn waves-effect green accent-4 btnModificarImplemento" type="button" id="btnModificarImplemento">Modificar </button>
-             <button class="btn waves-effect waves-light green accent-4" type="button" id="cancelar">Cancelar </button>
-   
-        </div>
-    </form>
-  </div>
-             <br><br>
-             <div class="row">
-             <div id="divInventario" class="card-panel lighten-1 col s12">
+             
+    <div id="test1" class="col s12">
+     <div class="row" id="divInventarios">
+             <div id="divInventarios" class="card-panel lighten-1 col s12">
                  <table id="tblDatosImplementos" class="bordered striped responsive-table" >
                      <thead>
                      <th>Codigo</th>
@@ -162,7 +149,65 @@
                      </tbody>
                  </table>
              </div>
-             </div>         
+             </div> 
+    </div>
+             
+             
+    <div id="test2" class="col s12 row" onclick="">
+        
+    </div>
+  </div>
+        
+        
+        
+        
+
+         <div class="container">
+             
+            <div class="row card-panel lighten-1" id="formInventario">
+         <form >
+             <div class="input-field">
+                 <input id="codigoI" name="codigo" type="text" required="Debe llenarlo!">
+          <label for="codigo">Codigo</label>
+        </div>
+         <div class="input-field">
+              <input id="nombreI" name="nombre" type="text">
+          <label for="nombre">Nombre</label>
+        </div>
+          <div class="input-field">
+              <input id="marcaI" name="marca" type="text">
+          <label for="marca">Marca</label>
+        </div>
+         <div class="input-field">
+             <input id="descripcionI" name="descripcion" type="text">
+          <label for="descripcion">Descripción</label>
+        </div>
+             <div class="input-field">
+             <input id="cantidadI" name="cantidad" type="text" onkeypress="return isNumberKey(event)">
+          <label for="cantidad">Cantidad</label>
+        </div>
+        <div class="input-field">
+    <select id="estadoI" name="estado">
+      <option value="Bueno">Bueno</option>
+      <option value="Medio">Medio</option>
+      <option value="Malo">Malo</option>
+    </select>
+    
+        
+  </div>
+         
+        <div class="center-align">
+      
+
+      <button class="btn waves-effect green accent-4  btnGuardarImplementos" type="button" id="btnGuardarImplementos">Guardar</button>
+      <button class="btn waves-effect green accent-4 btnModificarImplemento" type="button" id="btnModificarImplemento">Modificar </button>
+      <button class="btn waves-effect waves-light green accent-4" type="button" id="cancelar" onclick="cancel()">Cancelar </button>
+   
+        </div>
+    </form>
+  </div>
+             <br><br>
+                   
              
          </div>
                      
