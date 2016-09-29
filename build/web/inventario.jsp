@@ -101,6 +101,9 @@
           <li class="tab col s3"><a href="#test2" onclick="addImplements()">Agregar implemento deportivo</a></li>
    
            
+          
+          
+          
         </li>
       </ul>
     </div>
@@ -110,7 +113,7 @@
              <div id="divInventarios" class="card-panel lighten-1 col s12">
                  <table id="tblDatosImplementos" class="bordered striped responsive-table" >
                      <thead>
-                     <th>Codigo</th>
+                     <th>Codigo imp</th>
                      <th>Nombre</th>
                      <th>Marca</th>
                      <th>Descripción</th>
