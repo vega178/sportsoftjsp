@@ -57,6 +57,43 @@
 
     </head>
     <body>
+        
+         <nav>
+            <div class="nav-wrapper  green accent-4">
+                <a href="#!" class="brand-logo"><img src="imgs/logop.png"></a>
+                <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+                <ul class="right hide-on-med-and-down">
+                   
+                   <li><a class="dropdown-button deportes" href="#!" data-activates="personal">Personal<i class="material-icons right">arrow_drop_down</i></a></li>
+                    <li><a class="dropdown-button deportes" href="#!" data-activates="deportes">Deportes<i class="material-icons right">arrow_drop_down</i></a></li>
+                    <li><a href="inventario.jsp" id="inicio" class="inicio">Inventario</a></li>
+                    <li><a class="dropdown-button" href="#" class="conf" data-activates="configuracion">Configuración<i class="material-icons right">arrow_drop_down</i></a></li>
+
+                </ul>
+                <ul class="side-nav" id="mobile-demo">
+                   <li><a href="personal.jsp"  id="" class="personal">Personal</a></li>
+                    <li><a class="dropdown-button deportes" href="#!" data-activates="deporte">Deportes<i class="material-icons right">arrow_drop_down</i></a></li>
+                    <li><a href="implementos.jsp" id="" class="inicio">Inventario</a></li>
+                    <li><a class="dropdown-button" href="#" class="conf" data-activates="configuracio">Configuracion<i class="material-icons right">arrow_drop_down</i></a></li>
+                </ul>
+            </div>
+        </nav>
+        <!----------------------------------DROPDOWN CONFIGURACION-------------------------------------------------->
+        <ul id="configuracion" class="dropdown-content">
+            <li><a href="login.jsp?cerrar=true">salir</a></li>
+        <!----------------------------------DROPDOWN DEPORTES-------------------------------------------------->
+            <ul id="deportes" class="dropdown-content">
+                <li><a href="torneos.jsp">Futbol</a></li>
+            </ul>
+        
+        <ul id="personal" class="dropdown-content">
+                <li><a href="empleados.jsp">Empleados</a></li>
+                <li><a href="arbitros.jsp">Arbitros</a></li>
+            </ul>
+        </ul>
+
+        <br><br>
+        
 
         <ul id="crearEquipos" class="dropdown-content">
             <li><a class="waves-effect waves-light modal-trigger" href="#modal1">Nuevo</a></li>

@@ -98,7 +98,6 @@
             <div class="container">
                 <div class="row">
                     <div class="col l4 s4">
-                        <i class="material-icons medium">format_align_left</i>
                         <p class="white-text">Datos de la empresa</p>
                         <p class="grey-text text-lighten-4">Nombre: Grupo SportSoft.</p>
                         <p class="grey-text text-lighten-4">Direccion: Cr 23b Nr 38b - 274</p>
@@ -107,7 +106,6 @@
 
                     </div>
                     <div class="col l4  s14">
-                        <i class="material-icons medium">help</i>
                         <p class="white-text">Acerca de</p>
                         <ul>
                             <li><a class="grey-text text-lighten-3" href="manualusuario.jsp">Manual de usuario</a></li>
@@ -118,7 +116,6 @@
                         </ul>
                     </div>
                     <div class="col l4  s14">
-                        <i class="material-icons medium">perm_phone_msg</i>
                         <a href="#"> <p class="white-text" onclick="contac()">Contáctenos</p></a>
                         <form id="formulario-contacto" action="script.php" method="post" class="card-panel lighten-1">
                             <input type="hidden" name="redireccion" value="http://www.opencademy.com" />  
