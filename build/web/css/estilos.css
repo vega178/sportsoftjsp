@@ -117,3 +117,11 @@ body{
   text-align:center;
 }
 
+.input-field input:focus + label {
+   color: black !important;
+ }
+ /* label underline focus color */
+ .row .input-field input:focus {
+   border-bottom: 1px solid green !important;
+   box-shadow: 0 1px 0 0 green !important
+ }

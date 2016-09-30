@@ -21,6 +21,11 @@ $(document).ready(function () {
     $("#divModificarEquipo").hide();
       $("#tituloArbitro").hide();
      $("#formulario-contacto").hide();
+     
+     $('input').focus(function(){
+         $(this).css('outline-color','red');
+     });
+     
 });
 
 function formPerson() {

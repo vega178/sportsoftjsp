@@ -54,7 +54,7 @@
         </nav>
         <!----------------------------------DROPDOWN CONFIGURACION-------------------------------------------------->
         <ul id="configuracion" class="dropdown-content">
-            <li><a href="login.jsp?cerrar=true">salir</a></li>
+            <li><a href="web.jsp?cerrar=true">salir</a></li>
         <!----------------------------------DROPDOWN DEPORTES-------------------------------------------------->
             <ul id="deportes" class="dropdown-content">
                 <li><a href="torneos.jsp">Futbol</a></li>
@@ -107,7 +107,7 @@
                 
                <div class="card col s4" id="cardPersonal">
                     <div class="card-image waves-effect waves-block waves-light">
-                        <img class="activator" src="imgs/Entrenador.jpg">
+                        <img class="activator" src="imgs/torneo_opt.jpg">
                     </div>
                     <div class="card-content">
                         <span class="card-title activator grey-text text-darken-4">Torneos<i class="material-icons right">more_vert</i></span>
