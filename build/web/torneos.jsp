@@ -89,21 +89,10 @@
             </ul>
         </ul>
 
-
-
-
-
         <div>
-            <div class="nav-wrapper card-panel lighten-1">
-                <ul class="right hide-on-med-and-down">
-                    <li><a href="#" id="nuevoTorneo" class="crearTorneo " onclick="addTournaments()" style="color:black">Crear Torneo</a></li>
+            <div class="nav-wrapper card-panel lighten-1 row">
+         <a href="#" id="nuevoTorneo" class="crearTorneo " onclick="addTournaments()" style="color:black">Crear Torneo</a>
 
-
-                </ul>
-                <ul class="side-nav" id="mobile-demo">
-                    <li><a href="#" class="card-panel green accent-4" >Crear Torneo</a></li>
-
-                </ul>
             </div>
         </div>
 

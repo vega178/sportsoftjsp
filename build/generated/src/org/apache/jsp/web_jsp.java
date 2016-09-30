@@ -137,7 +137,6 @@ public final class web_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("            <div class=\"container\">\r\n");
       out.write("                <div class=\"row\">\r\n");
       out.write("                    <div class=\"col l4 s4\">\r\n");
-      out.write("                        <i class=\"material-icons medium\">format_align_left</i>\r\n");
       out.write("                        <p class=\"white-text\">Datos de la empresa</p>\r\n");
       out.write("                        <p class=\"grey-text text-lighten-4\">Nombre: Grupo SportSoft.</p>\r\n");
       out.write("                        <p class=\"grey-text text-lighten-4\">Direccion: Cr 23b Nr 38b - 274</p>\r\n");
@@ -146,7 +145,6 @@ public final class web_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("\r\n");
       out.write("                    </div>\r\n");
       out.write("                    <div class=\"col l4  s14\">\r\n");
-      out.write("                        <i class=\"material-icons medium\">help</i>\r\n");
       out.write("                        <p class=\"white-text\">Acerca de</p>\r\n");
       out.write("                        <ul>\r\n");
       out.write("                            <li><a class=\"grey-text text-lighten-3\" href=\"manualusuario.jsp\">Manual de usuario</a></li>\r\n");
@@ -157,7 +155,6 @@ public final class web_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("                        </ul>\r\n");
       out.write("                    </div>\r\n");
       out.write("                    <div class=\"col l4  s14\">\r\n");
-      out.write("                        <i class=\"material-icons medium\">perm_phone_msg</i>\r\n");
       out.write("                        <a href=\"#\"> <p class=\"white-text\" onclick=\"contac()\">Contáctenos</p></a>\r\n");
       out.write("                        <form id=\"formulario-contacto\" action=\"script.php\" method=\"post\" class=\"card-panel lighten-1\">\r\n");
       out.write("                            <input type=\"hidden\" name=\"redireccion\" value=\"http://www.opencademy.com\" />  \r\n");

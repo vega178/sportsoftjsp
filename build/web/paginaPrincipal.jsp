@@ -108,7 +108,11 @@
 
                 <div class="card col m4" id="cardTorneo">  
                     <div class="card-image waves-effect waves-block waves-light">
+<<<<<<< HEAD
                         <img class="activator" src="imgs/q.jpg">
+=======
+                        <img class="activator" src="imgs/torneo_opt.jpg">
+>>>>>>> 8d35b1d64ec3e677f212f978211464bf475c9f15
                     </div>
                     <div class="card-content">
                         <span class="card-title activator grey-text text-darken-4">Torneos<i class="material-icons right">more_vert</i></span>
