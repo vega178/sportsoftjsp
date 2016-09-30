@@ -57,22 +57,16 @@
             <form class="col s12 card-panel teal grey lighten-4">
                 <div class="row">
                     <div class="input-field col s12">
-<<<<<<< HEAD
                         <i class="material-icons prefix green-text text-accent-4">account_circle</i>
-=======
-                        <i class="material-icons prefix cyan-text text-darken-4">account_circle</i>
->>>>>>> 8d35b1d64ec3e677f212f978211464bf475c9f15
+
                         <input id="usuario" type="text" class="valid" onkeypress="return isNumberKey(event)">
                         <label for="icon_prefix">Número de documento</label>
                     </div>                
                 </div>
                 <div class="row"> 
                     <div class="input-field col s12">
-<<<<<<< HEAD
+
                         <i class="material-icons prefix green-text text-accent-4">lock</i>
-=======
-                        <i class="material-icons prefix cyan-text text-darken-4">lock</i>
->>>>>>> 8d35b1d64ec3e677f212f978211464bf475c9f15
                         <input id="clave" type="password" class="valid">
                         <label for="icon_telephone">Clave</label>
                     </div>
