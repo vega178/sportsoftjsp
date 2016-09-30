@@ -10,5 +10,9 @@ $(document).ready(function(){
      $('.slider').slider({full_width: true});
      $('select').material_select();
      $('.modal-trigger').leanModal();
-      $('ul.tabs').tabs();
+     $('ul.tabs').tabs();
+     $('.parallax').parallax();
+     $('.carousel').carousel();
+     
+        
 });

@@ -37,7 +37,7 @@
     <body>
         <nav>
     <div class="nav-wrapper  green accent-4">
-        <a href="#!" class="brand-logo"><img src="imgs/logop.png"></a>
+        <a href="web.jsp" class="brand-logo"><img src="imgs/logop.png"></a>
       <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
       <ul class="right hide-on-med-and-down">
           <li><a onclick="login()" id="iniciarSesion">Iniciar sesión</a></li>
@@ -57,24 +57,25 @@
             <form class="col s12 card-panel teal grey lighten-4">
                 <div class="row">
                     <div class="input-field col s12">
-                        <i class="material-icons prefix">account_circle</i>
+                        <i class="material-icons prefix green-text text-accent-4">account_circle</i>
                         <input id="usuario" type="text" class="valid" onkeypress="return isNumberKey(event)">
                         <label for="icon_prefix">Número de documento</label>
                     </div>                
                 </div>
                 <div class="row"> 
                     <div class="input-field col s12">
-                        <i class="material-icons prefix">lock</i>
+                        <i class="material-icons prefix green-text text-accent-4">lock</i>
                         <input id="clave" type="password" class="valid">
                         <label for="icon_telephone">Clave</label>
                     </div>
                 </div>
                 <div class="center-align">
                     <button class="btn waves-effect green accent-4" type="button" id="btnLogin" onclick="">Ingresar</button>
-                    <button class="btn waves-effect green accent-4"  type="button" id="btncancelarLogin">Cancelar</button>
-                            </div>
+                 </div>
+                <div class="center-align">
+                    <a class="black-text" href="">Olvidé mi contraseña</a>
+                </div>
                 
-                <span><p><span>Olvidé mi contraseña</span></p></span>
             </form>
         </div>
         
@@ -84,34 +85,35 @@
             <form class="col s12 card-panel teal grey lighten-4">
                 <div class="row">
                     <div class="input-field col s12">
-                        <i class="material-icons prefix">account_circle</i>
+                        <i class="material-icons prefix green-text text-accent-4">account_circle</i>
                         <input id="usuarioRegisro" type="text" class="valid" onkeypress="return isNumberKey(event)">
                         <label for="icon_prefix">Numero de documento</label>
                     </div>                
                 </div>
                 <div class="row"> 
                     <div class="input-field col s12">
-                        <i class="material-icons prefix">lock</i>
+                        <i class="material-icons prefix green-text text-accent-4">lock</i>
                         <input id="claveRegistro" type="password" class="valid">
                         <label for="icon_telephone">Clave</label>
                     </div>
                 </div>
                  <div class="row"> 
                     <div class="input-field col s12">
-                        <i class="material-icons prefix">lock</i>
+                        <i class="material-icons prefix green-text text-accent-4">lock</i>
                         <input id="confirmarClave" type="password" class="valid">
                         <label for="icon_telephone">Confirmar clave</label>
                     </div>
                 </div>
                 <div class="center-align">
                     <button class="btn waves-effect green accent-4" type="button" id="btnRegistro" onclick="">Ingresar</button>
-                    <button class="btn waves-effect green accent-4" type="button" id="btncancelarRegistro">Cancelar</button>
-                           
+                    <button class="btn waves-effect green accent-4" type="button" id="btnCancelar" onclick="">Cancelar</button>
                 </div>
+                <br><br>
             </form>
         </div>
 
         </div>
+        <br><br><br><br>
         
         <!-- calle 48c sur # 43a 270 envigado
              gestionhumana@estampadosdiueicx.com

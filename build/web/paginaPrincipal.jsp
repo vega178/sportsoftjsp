@@ -54,7 +54,7 @@
         </nav>
         <!----------------------------------DROPDOWN CONFIGURACION-------------------------------------------------->
         <ul id="configuracion" class="dropdown-content">
-            <li><a href="login.jsp?cerrar=true">salir</a></li>
+            <li><a href="web.jsp?cerrar=true">salir</a></li>
         <!----------------------------------DROPDOWN DEPORTES-------------------------------------------------->
             <ul id="deportes" class="dropdown-content">
                 <li><a href="torneos.jsp">Futbol</a></li>
@@ -68,58 +68,63 @@
 
         <br><br>
         
-      <!--  <div class="container">-->
-               <div class="container">
-            <h2 id="tituloArbitro" class="center-align">Árbitros</h2>
+        <!--  <div class="container">-->
+        <div class="container">
 
-            <div class="row" id="card" >
-                <div class="card col s4" id="cardPersonal">
+            <h2 id="tituloArbitro" class="center-align">Árbitros</h2>
+            <div class="row">
+                <div class="card col m4" id="cardPersonal">
                     <div class="card-image waves-effect waves-block waves-light">
                         <img class="activator" src="imgs/Entrenador.jpg">
                     </div>
                     <div class="card-content">
                         <span class="card-title activator grey-text text-darken-4">Empleados<i class="material-icons right">more_vert</i></span>
-                        <p><a href="#" id="agregarPersonal" onclick="">Acceder</a></p>
+                        <p><a href="empleados.jsp" id="agregarPersonal" onclick="">Acceder</a></p>
                     </div>
                     <div class="card-reveal">
                         <span class="card-title grey-text text-darken-4">Empleados<i class="material-icons right">close</i></span>
-                        <p></p>
+                        <p>La función de los empleados es optimizar el tiempo de registro o control de torneos deportivos haciendo las funciones como;
+                            agregar y buscar torneos, editarlos y otro tipo de funciones que requiere el sistema </p>
                     </div>
                 </div>
-                
-                    
 
 
-                <div class="card col s4" id="cardArbitro">
+
+                <div class="card col m4" id="cardArbitro" >
                     <div class="card-image waves-effect waves-block waves-light">
                         <img class="activator" src="imgs/arbitros1.jpg">
                     </div>
                     <div class="card-content">
                         <span class="card-title activator grey-text text-darken-4">Árbitros<i class="material-icons right">more_vert</i></span>
-                        <p><a href="#" id="agregarArbitro" onclick="">Acceder</a> </p>
+                        <p><a href="arbitros.jsp" id="agregarArbitro" onclick="">Acceder</a> </p>
                     </div>
                     <div class="card-reveal">
                         <span class="card-title grey-text text-darken-4">Árbitros<i class="material-icons right">close</i></span>
                         <p>La función principal de un árbitro es hacer que el juego se lleve a cabo con la menor cantidad posibles de interferencias, y su responsabilidad fundamental, cuidar la integridad física de los jugadores. .</p>
                     </div>
                 </div> 
-                
-                
-               <div class="card col s4" id="cardPersonal">
+
+
+
+                <div class="card col m4" id="cardTorneo">  
                     <div class="card-image waves-effect waves-block waves-light">
-                        <img class="activator" src="imgs/Entrenador.jpg">
+                        <img class="activator" src="imgs/q.jpg">
                     </div>
                     <div class="card-content">
                         <span class="card-title activator grey-text text-darken-4">Torneos<i class="material-icons right">more_vert</i></span>
-                        <p><a href="#" id="agregarPersonal" onclick="">Acceder</a></p>
+                        <p><a href="torneos.jsp" id="agregarTorneos" onclick="">Acceder</a></p>
                     </div>
                     <div class="card-reveal">
-                        <span class="card-title grey-text text-darken-4">Torneos<i class="material-icons right">close</i></span>
+                        <span class="card-title grey-text text-darken-4">Inventario<i class="material-icons right">close</i></span>
                         <p></p>
                     </div>
                 </div>
-            </div> </div>
+            </div>
 
+            
+            </div>
+
+           
        <!-- </div>-->
         
               <footer class="page-footer green accent-4">

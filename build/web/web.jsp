@@ -12,7 +12,7 @@
         <title>SportSoft</title>
          <!------------------------------------MATERIALIZECSS--------------------------------------->
         <link href="css/materialize.min.css" rel="stylesheet" type="text/css"/>
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+        <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
         <script src="js/materialize.min.js" type="text/javascript"></script>
         <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
         <script src="js/inicioMaterializecss.js" type="text/javascript"></script>
@@ -58,8 +58,7 @@
         </ul>
 
         <br><br>
-
-        <!--  <div class="container">-->
+        <!--<div class="container">-->
         <div style="background-color: black">
             <div class="slider">
                 <ul class="slides">
@@ -90,9 +89,6 @@
                 </ul>
             </div>
         </div>
-
-
-        <!-- </div>-->
 
         <footer class="page-footer green accent-4">
             <div class="container">

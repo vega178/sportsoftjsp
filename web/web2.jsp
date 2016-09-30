@@ -1,20 +1,18 @@
 <%-- 
-    Document   : paginaPrincipal
-    Created on : 9/09/2016, 07:41:53 AM
-    Author     : santhyago
+    Document   : web2
+    Created on : 30/09/2016, 01:11:00 AM
+    Author     : ESTEBAN
 --%>
 
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
     <head>
-        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <link rel="icon" type="image/png" href="imgs/logop.png"/>
-        <title>SportSoft</title>
-        <!------------------------------------MATERIALIZECSS--------------------------------------->
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/css/materialize.min.css">
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/js/materialize.min.js"></script>
+       <title>SportSoft</title>
+         <!------------------------------------MATERIALIZECSS--------------------------------------->
+        <link href="css/materialize.min.css" rel="stylesheet" type="text/css"/>
+        <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+        <script src="js/materialize.min.js" type="text/javascript"></script>
         <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
         <script src="js/inicioMaterializecss.js" type="text/javascript"></script>
         <!------------------------------------AJAX---------------------------------------->
@@ -27,9 +25,11 @@
         <!------------------------------------SWEETALERT------------------------------------->
         <link href="css/sweetalert.css" rel="stylesheet" type="text/css"/>
         <script src="js/sweetalert.min.js" type="text/javascript"></script>
-
+    
         <script src="js/pace.min.js" type="text/javascript"></script>
-         <link href="templates/pace-theme-corner-indicator.tmpl.css" rel="stylesheet" type="text/css"/>
+        <link href="templates/pace-theme-corner-indicator.tmpl.css" rel="stylesheet" type="text/css"/>
+        <link rel="icon" type="image/png" href="imgs/logop.png"/>
+         
     </head>
     <body>
         <nav>
@@ -37,97 +37,79 @@
                 <a href="#!" class="brand-logo"><img src="imgs/logop.png"></a>
                 <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
                 <ul class="right hide-on-med-and-down">
-                   
-                   <li><a class="dropdown-button deportes" href="#!" data-activates="personal">Personal<i class="material-icons right">arrow_drop_down</i></a></li>
-                    <li><a class="dropdown-button deportes" href="#!" data-activates="deportes">Deportes<i class="material-icons right">arrow_drop_down</i></a></li>
-                    <li><a href="inventario.jsp" id="inicio" class="inicio">Inventario</a></li>
-                    <li><a class="dropdown-button" href="#" class="conf" data-activates="configuracion">Configuración<i class="material-icons right">arrow_drop_down</i></a></li>
+                    <li><a href="login.jsp"  id="personal" class="personal">Iniciar Sesion</a></li>
+
 
                 </ul>
                 <ul class="side-nav" id="mobile-demo">
-                   <li><a href="personal.jsp"  id="" class="personal">Personal</a></li>
-                    <li><a class="dropdown-button deportes" href="#!" data-activates="deporte">Deportes<i class="material-icons right">arrow_drop_down</i></a></li>
-                    <li><a href="implementos.jsp" id="" class="inicio">Inventario</a></li>
-                    <li><a class="dropdown-button" href="#" class="conf" data-activates="configuracio">Configuracion<i class="material-icons right">arrow_drop_down</i></a></li>
+                    <li><a href="personal.jsp"  id="" class="personal">Iniciar Sesión</a></li>
+
                 </ul>
             </div>
         </nav>
         <!----------------------------------DROPDOWN CONFIGURACION-------------------------------------------------->
         <ul id="configuracion" class="dropdown-content">
-            <li><a href="web.jsp?cerrar=true">salir</a></li>
-        <!----------------------------------DROPDOWN DEPORTES-------------------------------------------------->
+            <li><a href="login.jsp?cerrar=true">salir</a></li>
+            <!----------------------------------DROPDOWN DEPORTES-------------------------------------------------->
             <ul id="deportes" class="dropdown-content">
                 <li><a href="torneos.jsp">Futbol</a></li>
             </ul>
-        
-        <ul id="personal" class="dropdown-content">
-                <li><a href="empleados.jsp">Empleados</a></li>
-                <li><a href="arbitros.jsp">Arbitros</a></li>
-            </ul>
         </ul>
+        <!--parallax---------------------------------------------->
+        <div class="parallax-container">
+            <div class="parallax"><img src="imgs/mm.jpg"></div>
+        </div>
+        <div class="section white">
+            <div class="row container">
+                <h2 class="header">SportSoft</h2>
+                <!----------------------------------------------------------------->
+                <div class="chip">
+                    <img src="imgs/Entrenador.jpg" alt="Contact Person">
+                    Jane Doe
+                </div>
+                <div class="chip">
+                    <img src="imgs/arbitros1.jpg" alt="Contact Person">
+                    Jane Doe
+                </div>
 
-        <br><br>
         
-        <!--  <div class="container">-->
-        <div class="container">
-
-            <h2 id="tituloArbitro" class="center-align">Árbitros</h2>
-            <div class="row">
-                <div class="card col m4" id="cardPersonal">
-                    <div class="card-image waves-effect waves-block waves-light">
-                        <img class="activator" src="imgs/Entrenador.jpg">
-                    </div>
-                    <div class="card-content">
-                        <span class="card-title activator grey-text text-darken-4">Empleados<i class="material-icons right">more_vert</i></span>
-                        <p><a href="empleados.jsp" id="agregarPersonal" onclick="">Acceder</a></p>
-                    </div>
-                    <div class="card-reveal">
-                        <span class="card-title grey-text text-darken-4">Empleados<i class="material-icons right">close</i></span>
-                        <p>La función de los empleados es optimizar el tiempo de registro o control de torneos deportivos haciendo las funciones como;
-                            agregar y buscar torneos, editarlos y otro tipo de funciones que requiere el sistema </p>
-                    </div>
+                
+                <div class="carousel">
+                    <a class="carousel-item" href="#one!"><img src="http://www.exposureguide.com/images/soccer-photography-tips/soccer-photography-tips4-e.jpg"></a>
+                    <a class="carousel-item" href="#two!"><img src="http://www.active.com/Assets/active-family/620/drill-of-the-week-soccer-passing.jpg"></a>
+                    <a class="carousel-item" href="#three!"><img src="http://www.gannett-cdn.com/-mm-/9ae2a90976bcbab7645d8dd2996716dc54797fa4/c=0-69-1348-831&r=x329&c=580x326/local/-/media/2015/07/02/Westchester/Westchester/635714678539442762-socc.jpg"></a>
+                    <a class="carousel-item" href="#four!"><img src="https://15128-presscdn-0-60-pagely.netdna-ssl.com/wp-content/uploads/2016/04/american-soccer-994x559.jpg"></a>
+                    <a class="carousel-item" href="#five!"><img src="http://plstore.mx/c/46-category_default/futbol-soccer.jpg"></a>
                 </div>
-
-
-
-                <div class="card col m4" id="cardArbitro" >
-                    <div class="card-image waves-effect waves-block waves-light">
-                        <img class="activator" src="imgs/arbitros1.jpg">
-                    </div>
-                    <div class="card-content">
-                        <span class="card-title activator grey-text text-darken-4">Árbitros<i class="material-icons right">more_vert</i></span>
-                        <p><a href="arbitros.jsp" id="agregarArbitro" onclick="">Acceder</a> </p>
-                    </div>
-                    <div class="card-reveal">
-                        <span class="card-title grey-text text-darken-4">Árbitros<i class="material-icons right">close</i></span>
-                        <p>La función principal de un árbitro es hacer que el juego se lleve a cabo con la menor cantidad posibles de interferencias, y su responsabilidad fundamental, cuidar la integridad física de los jugadores. .</p>
-                    </div>
-                </div> 
-
-
-
-                <div class="card col m4" id="cardTorneo">  
-                    <div class="card-image waves-effect waves-block waves-light">
-                        <img class="activator" src="imgs/q.jpg">
-                    </div>
-                    <div class="card-content">
-                        <span class="card-title activator grey-text text-darken-4">Torneos<i class="material-icons right">more_vert</i></span>
-                        <p><a href="torneos.jsp" id="agregarTorneos" onclick="">Acceder</a></p>
-                    </div>
-                    <div class="card-reveal">
-                        <span class="card-title grey-text text-darken-4">Inventario<i class="material-icons right">close</i></span>
-                        <p></p>
-                    </div>
-                </div>
-            </div>
-
+                
+                
             
+                <ul class="collapsible" data-collapsible="accordion">
+                    <li>
+                        <div class="collapsible-header"><i class="material-icons">filter_drama</i>First</div>
+                        <div class="collapsible-body"><p>Lorem ipsum dolor sit amet.</p></div>
+                    </li>
+                    <li>
+                        <div class="collapsible-header"><i class="material-icons">place</i>Second</div>
+                        <div class="collapsible-body"><p>Lorem ipsum dolor sit amet.</p></div>
+                    </li>
+                    <li>
+                        <div class="collapsible-header"><i class="material-icons">whatshot</i>Third</div>
+                        <div class="collapsible-body"><p>Lorem ipsum dolor sit amet.</p></div>
+                    </li>
+                </ul>
+             
+                
+                <!----------------------------------------------------------------->            
             </div>
+        </div>
+        <div class="parallax-container">
+            <div class="parallax"><img src="imgs/qq.jpg"></div>
+        </div>
+      
+        <!------------------------------------------------------>
 
-           
-       <!-- </div>-->
-        
-              <footer class="page-footer green accent-4">
+        <footer class="page-footer green accent-4">
             <div class="container">
                 <div class="row">
                     <div class="col l4 s4">
@@ -195,6 +177,5 @@
                 </div>
             </div>
         </footer>
-            
     </body>
 </html>

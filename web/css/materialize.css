@@ -6484,7 +6484,7 @@ select {
   position: relative;
 }
 
-.select-wrapper input.select-dropdown {
+/*.select-wrapper input.select-dropdown {
   position: relative;
   cursor: pointer;
   background-color: transparent;
@@ -6498,7 +6498,7 @@ select {
   margin: 0 0 20px 0;
   padding: 0;
   display: block;
-}
+}*/
 
 .select-wrapper span.caret {
   color: initial;
@@ -6890,7 +6890,7 @@ input[type=range]:focus::-ms-fill-upper {
   line-height: 48px;
   margin: 0 32px 0 0;
   width: 24px;
-  color: rgba(0, 0, 0, 0.54);
+  color: rgba(0, 0, 0, 0.10);
 }
 
 .side-nav .divider {
@@ -7421,7 +7421,7 @@ input[type=range]:focus::-ms-fill-upper {
   width: 200%;
   height: 100%;
   border-width: 3px;
-  /* STROKEWIDTH */
+  STROKEWIDTH 
   border-style: solid;
   border-color: inherit;
   border-bottom-color: transparent !important;

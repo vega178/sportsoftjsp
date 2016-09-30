@@ -716,3 +716,10 @@ function modificarEquipo(id) {
 
     });
 }
+
+$.extend($.scrollTo.defaults, {
+  duration: 800,
+});
+$('#prueba1').click(function() {
+  $.scrollTo('#prueba');
+});
